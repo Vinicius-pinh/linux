@@ -90,7 +90,7 @@ service zabbix-agent stop
 IP=`ifconfig | egrep -o '(inet addr: | inet | addr:)([[:digit:]]{1,3}\.){3}[[:digit:]]{1,3}' | egrep -o '[[:digit:]].*'`
 IPV4GET=`echo $IP | cut -d " " -f "1"`
 RANGE=`echo $IPV4GET | cut -d "." -f "3"`
-PROXYIP=`echo "192.168.$RANGE.128"`
+PROXYIP=`echo "172.27.$RANGE.128"`
 
 HOSTNAME=`hostname`
 #ZBXFILE="/etc/zabbix/zabbix_agentd.conf"
