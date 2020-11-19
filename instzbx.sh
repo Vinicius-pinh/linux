@@ -13,8 +13,8 @@ if [[ "$VERSION" == *"14"* ]];then
 
    echo "Ubuntu 14"
    echo "Installing zabbix packege"
-   wget repo.zabbix.com/zabbix/5.0/ubuntu/pool/main/z/zabbix-release/zabbix-release_5.0-1+trusty_all.deb -P /home/controller
-   dpkg -i /home/controller/zabbix-release_5.0-1+trusty_all.deb
+   wget repo.zabbix.com/zabbix/5.0/ubuntu/pool/main/z/zabbix-release/zabbix-release_5.0-1+trusty_all.deb -P /opt/
+   dpkg -i /opt/zabbix-release_5.0-1+trusty_all.deb
    apt-get update
    apt-get install zabbix-agent
    ZBX=`dpkg -l | grep zabbix`
@@ -28,8 +28,8 @@ if [[ "$VERSION" == *"16"* ]];then
 
    echo "Ubuntu 16"
    echo "Installing zabbix packege"
-   wget repo.zabbix.com/zabbix/5.0/ubuntu/pool/main/z/zabbix-release/zabbix-release_5.0-1+xenial_all.deb -P /home/controller
-   dpkg -i /home/controller/zabbix-release_5.0-1+xenial_all.deb
+   wget repo.zabbix.com/zabbix/5.0/ubuntu/pool/main/z/zabbix-release/zabbix-release_5.0-1+xenial_all.deb -P /opt/
+   dpkg -i /opt/zabbix-release_5.0-1+xenial_all.deb
    apt-get update
    apt-get install zabbix-agent
    ZBX=`dpkg -l | grep zabbix`
@@ -43,8 +43,8 @@ if [[ "$VERSION" == *"18"* ]];then
 
    echo "Ubuntu 18"
    echo "Installing zabbix packege"
-   wget repo.zabbix.com/zabbix/5.0/ubuntu/pool/main/z/zabbix-release/zabbix-release_5.0-1+bionic_all.deb
-   dpkg -i /home/controller/zabbix-release_5.0-1+bionic_all.deb
+   wget repo.zabbix.com/zabbix/5.0/ubuntu/pool/main/z/zabbix-release/zabbix-release_5.0-1+bionic_all.deb -P /opt/
+   dpkg -i /opt/zabbix-release_5.0-1+bionic_all.deb
    apt-get update
    apt-get install zabbix-agent
    ZBX=`dpkg -l | grep zabbix`
@@ -58,8 +58,8 @@ if [[ "$VERSION" == *"20"* ]];then
 
    echo "Ubuntu 20"
    echo "Installing zabbix packege"
-   wget repo.zabbix.com/zabbix/5.0/ubuntu/pool/main/z/zabbix-release/zabbix-release_5.0-1+focal_all.deb -P /home/controller
-   dpkg -i /home/controller/zabbix-release_5.0-1+focal_all.deb
+   wget repo.zabbix.com/zabbix/5.0/ubuntu/pool/main/z/zabbix-release/zabbix-release_5.0-1+focal_all.deb -P /opt/
+   dpkg -i /opt/zabbix-release_5.0-1+focal_all.deb
    apt-get update
    apt-get install zabbix-agent
    ZBX=`dpkg -l | grep zabbix`
