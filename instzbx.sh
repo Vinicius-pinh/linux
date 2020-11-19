@@ -87,7 +87,7 @@ service zabbix-agent stop
 #
 ####################
 
-IP=`ifconfig | egrep -o 'addr:([[:digit:]]{1,3}\.){3}[[:digit:]]{1,3}' | egrep -o '[[:digit:]].*'`
+IP=`ifconfig | egrep -o '(addr: | inet )([[:digit:]]{1,3}\.){3}[[:digit:]]{1,3}' | egrep -o '[[:digit:]].*'`
 IPV4GET=`echo $IP | cut -d " " -f "1"`
 RANGE=`echo $IPV4GET | cut -d "." -f "3"`
 PROXYIP=`echo "192.168.$RANGE.128"`
